@@ -17,6 +17,7 @@ rm -f GITHUB_CLASSROOM_SETUP.md
 rm -f run_all_tests.sh
 rm -f run_inclass1_tests.sh
 rm -f run_lab1_tests.sh
+# DO NOT REMOVE .github or .github/workflows (preserves autograding)
 
 # Remove compiled files
 echo "Removing compiled files and directories..."
