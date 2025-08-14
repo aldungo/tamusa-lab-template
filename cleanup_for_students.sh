@@ -5,16 +5,21 @@ echo "🧹 Cleaning up files for student template..."
 
 # Remove solution files
 echo "Removing solution files..."
-rm -f InClass3_SOLUTION.java
-rm -f Lab3_SOLUTION.java
+rm -f *_SOLUTION.java
+# Remove all sample solution files (makes it too easy for students)
+rm -f *_Sample_Solution.java
+rm -f *.class
 
 # Remove setup/development files
 echo "Removing development files..."
 rm -f create_classroom_package.sh
 rm -f GITHUB_CLASSROOM_SETUP.md
+rm -f run_all_tests.sh
+rm -f run_inclass1_tests.sh
+rm -f run_lab1_tests.sh
 
 # Remove compiled files
-echo "Removing target directory..."
+echo "Removing compiled files and directories..."
 rm -rf target/
 
 # Optional: Remove instructor documentation
@@ -24,6 +29,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "Removing instructor docs..."
     rm -f STUDENT_EXPERIENCE.md
     rm -f TESTING_SUMMARY.md
+    rm -f TESTING_GUIDE.md
 fi
 
 echo "✅ Cleanup complete! Ready to create template repository."

@@ -40,8 +40,6 @@ TESTING_SUMMARY.md                # Testing overview
 - **Environment Testing**: Verify GitHub Classroom and codespace functionality
 - **Basic Java Syntax**: Learn fundamental Java program structure
 - **Variable Concepts**: Understand String variable declaration and assignment
-- **Output Operations**: Master System.out.println() usage
-- **Development Workflow**: Practice compile, run, and submission process
 
 ### Assignment Structure
 

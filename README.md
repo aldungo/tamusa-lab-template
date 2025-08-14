@@ -5,31 +5,34 @@
 **Purpose:** The first lab assignment is an opportunity to test your GitHub Classroom environment, making sure you understand how to begin writing programs using a codespace. This will also be your first look at variables, which will be a fundamental part of all your programs.
 
 **Learning Objectives:**
-- Test your GitHub Classroom setup and codespace access
-- Create your first Java program with basic print statements
-- Learn about String variables and assignment
-- Practice running Java programs
-- Understand the submission process for labs
 
 ## Getting Started with GitHub Classroom
 
+## For Professors: Preparing the Student Template
+
+Before using this repository as a GitHub Classroom template, run the `cleanup_for_students.sh` script to remove all solution files, test runner scripts, compiled files, and instructor documentation. This ensures students only see starter code and instructions.
+
+**Steps:**
+1. Run `./cleanup_for_students.sh` and follow prompts.
+2. Commit and push the cleaned repository to GitHub.
+3. Mark the repository as a template in GitHub settings.
+4. Use this template in GitHub Classroom to create student assignments.
+
+## Autograding with GitHub Actions
+
+This repository includes an autograding workflow. Every time a student pushes code, tests will run automatically using GitHub Actions. Results are visible in the "Actions" tab of their repository.
+
+**How it works:**
+- On every push or pull request to `main`, Maven will build and run all tests.
+- Instructors can review test results for each student submission.
+
+No manual setup is required—autograding is enabled by default.
+
 ### Step 1: Accept the Assignment
-- Click the GitHub Classroom assignment link provided by your instructor
-- Accept the assignment to create your personal repository
-- Wait for the repository setup to complete
 
 ### Step 2: Access Your Codespace
-- Navigate to your newly created repository on GitHub
-- Click the green "Code" button
-- Select "Codespaces" tab
-- Click "Create codespace on main" (or open existing codespace)
-- Wait for the environment to load completely
 
 ### Step 3: Explore Your Workspace
-- Familiarize yourself with the VS Code interface in your browser
-- Notice the file explorer on the left side
-- Locate the terminal at the bottom of the screen
-- Find the README.md file (this file you're reading now)
 
 ## Understanding Variables
 
@@ -65,25 +68,14 @@ Create a Java file named `Lab1_FirstName_LastName.java` (replace FirstName and L
 ### Step-by-Step Instructions for Lab1.java
 
 #### Step 1: Create Your Java File
-- In the file explorer, right-click in the main directory
-- Select "New File"
-- Name it `Lab1_YourFirstName_YourLastName.java`
-- Open the file to begin editing
 
 #### Step 2: Add File Header and Class Structure
-- Add your name, date, and purpose in a comment header
-- Create the basic class structure with a main method
 
 #### Step 3: Declare a String Variable
-- Inside the main method, declare a String variable
-- Give it a meaningful name like `message`, `statement`, or `whyStatement`
 
 #### Step 4: Assign a String Value
-- Assign a String literal containing a sentence that briefly summarizes why you want to be a programmer
-- **Important:** Do not use "Welcome to Java!" - create your own personal statement
 
 #### Step 5: Display the Variable
-- Write a `println()` statement to display your String variable to the console
 
 ### Sample Program Structure
 ```java
@@ -127,14 +119,8 @@ public class Lab1_YourFirstName_YourLastName
 ## Testing Your Program
 
 ### What Should Happen
-- Your program should compile without errors
-- When run, it should display your personal statement about programming
-- The output should appear in the terminal
 
 ### Troubleshooting Common Issues
-- **Compilation Error:** Check that your class name matches your filename exactly
-- **No Output:** Make sure you're using `System.out.println()` with your variable name
-- **Syntax Error:** Check for missing semicolons, quotes, or braces
 
 ## InClass Assignment Instructions
 
@@ -142,15 +128,10 @@ public class Lab1_YourFirstName_YourLastName
 Following the same pattern as Lab1, create a file named `InClass1_FirstName_LastName.java` for practice during class time.
 
 **Requirements:**
-- Declare a String variable with a different name than your Lab1 variable
-- Assign a statement about what you hope to learn in this programming course
-- Display the variable using `System.out.println()`
 
 ## Submission Instructions
 
 ### Step 1: Save All Your Work
-- Make sure both `Lab1_YourName.java` and `InClass1_YourName.java` are saved
-- Verify both programs compile and run successfully
 
 ### Step 2: Commit Your Changes
 1. In the terminal, run:
@@ -165,50 +146,24 @@ Following the same pattern as Lab1, create a file named `InClass1_FirstName_Last
    - Click "Commit" then "Sync Changes"
 
 ### Step 3: Verify Submission
-- Go to your GitHub repository in a web browser
-- Refresh the page and confirm your files are uploaded
-- Check that your latest commit message appears
 
 ### Step 4: Submit to Learning Management System
-- Copy the URL of your GitHub repository
-- Submit the repository URL in your course's LMS assignment submission area
-- Include any additional notes as required by your instructor
 
 ## Grading Criteria
 
 **Lab1.java (100 points total):**
-- String variable declaration (30 points)
-- String assignment with personal statement (40 points)
-- Correct `println()` statement displaying the variable (30 points)
 
 **InClass1.java (Participation points):**
-- Completed during class time
-- Demonstrates understanding of the same concepts
 
 **Additional Considerations:**
-- Proper file naming convention
-- Code compiles without errors
-- Meaningful variable names
-- Personal and original content (not copying examples)
 
 ## Getting Help
 
 ### During Class
-- Raise your hand for immediate assistance
-- Work with classmates to troubleshoot issues
-- Ask questions about any step you don't understand
 
 ### Outside of Class
-- Review this README.md file
-- Check course discussion forums
-- Email your instructor with specific questions
-- Attend office hours for additional help
 
 ### Common Resources
-- Java documentation for String class
-- GitHub Classroom help documentation
-- VS Code keyboard shortcuts and features
 
----
 
 **Remember:** This is your first programming assignment! Take your time, ask questions, and don't worry if it takes a few tries to get everything working. The goal is to learn the process and get comfortable with the tools you'll be using throughout the course.
